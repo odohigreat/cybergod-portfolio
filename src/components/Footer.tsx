@@ -4,13 +4,13 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-12 px-6 bg-space-deep border-t border-space-light">
+    <footer className="py-12 px-0 md:px-6 bg-space-deep border-t border-space-light">
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
             <div className="text-2xl font-bold font-mono text-arch-primary mb-4">
-              &lt;/DEV&gt;
+              &lt;/Cybergod&gt;
             </div>
             <p className="text-structure-primary leading-relaxed">
               Frontend Architect crafting exceptional digital experiences 
@@ -43,10 +43,10 @@ const Footer = () => {
             </h4>
             <div className="flex gap-4">
               {[
-                { icon: Github, label: 'GitHub', href: '#' },
-                { icon: Linkedin, label: 'LinkedIn', href: '#' },
-                { icon: Twitter, label: 'Twitter', href: '#' },
-                { icon: Mail, label: 'Email', href: 'mailto:hello@frontend-architect.dev' }
+                { icon: Github, label: 'GitHub', href: 'https://github.com/odohigreat' },
+                { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/odohi-great/' },
+                { icon: Twitter, label: 'Twitter', href: 'https://twitter.com/odohigreat' },
+                { icon: Mail, label: 'Email', href: 'https://mailto:odohigreat@gmail.com' }
               ].map((social) => (
                 <a
                   key={social.label}
@@ -65,10 +65,10 @@ const Footer = () => {
         <div className="border-t border-space-light pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-structure-muted text-sm">
-              © {currentYear} Frontend Architect. All rights reserved.
+              © {currentYear} Cybergod. All rights reserved.
             </div>
             <div className="text-structure-muted text-sm font-mono">
-              Made with 💜 and cosmic energy
+              Made with 💙 and resilience
             </div>
           </div>
         </div>

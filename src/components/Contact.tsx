@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Mail, MapPin, Phone } from 'lucide-react';
+import { LuLinkedin } from "react-icons/lu";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -27,7 +28,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 bg-space-medium/30">
+    <section id="contact" className="py-20 px-0 md:px-6 bg-space-medium/30">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
@@ -54,12 +55,22 @@ const Contact = () => {
 
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gradient-arch rounded-lg flex items-center justify-center">
+                  <div className="w-12 h-12 bg-gradient-cosmic rounded-lg flex items-center justify-center">
                     <Mail className="w-5 h-5 text-space-deep" />
                   </div>
                   <div>
                     <div className="text-structure-primary">Email</div>
-                    <div className="text-arch-primary font-medium">hello@frontend-architect.dev</div>
+                    <div className="text-arch-primary font-medium">odohigreat@gmail.com</div>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-gradient-arch rounded-lg flex items-center justify-center">
+                    <LuLinkedin className="w-5 h-5 text-space-deep" />
+                  </div>
+                  <div>
+                    <div className="text-structure-primary">Linked-In</div>
+                    <a href='https://www.linkedin.com/in/odohi-great/' className="text-arch-primary font-medium hover:underline cursor-pointer">@odohi-great</a>
                   </div>
                 </div>
 
@@ -69,7 +80,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="text-structure-primary">Phone</div>
-                    <div className="text-cosmic-primary font-medium">+1 (555) 123-4567</div>
+                    <div className="text-cosmic-primary font-medium">+234 805 183 0076</div>
                   </div>
                 </div>
 
@@ -79,7 +90,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="text-structure-primary">Location</div>
-                    <div className="text-arch-secondary font-medium">San Francisco, CA</div>
+                    <div className="text-arch-secondary font-medium">Lagos, Nigeria</div>
                   </div>
                 </div>
               </div>
@@ -97,7 +108,7 @@ const Contact = () => {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-structure-primary">Project Quote</span>
-                  <span className="text-arch-primary font-mono">&lt; 48 hours</span>
+                  <span className="text-arch-primary font-mono">&lt; 72 hours</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-structure-primary">Availability</span>
@@ -178,7 +189,7 @@ const Contact = () => {
                 size="lg"
                 className="w-full bg-gradient-cosmic text-foreground hover:shadow-glow-cosmic transition-all duration-300"
               >
-                Launch Message
+                Send
               </Button>
             </form>
           </Card>
