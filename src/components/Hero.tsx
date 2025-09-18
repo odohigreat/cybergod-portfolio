@@ -70,7 +70,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 transform -translate-x-1/2 animate-bounce">
           <FaArrowCircleDown className="size-10 border-2 border-arch-primary rounded-full p-2 text-arch-primary mt-2 animate-pulse" />
       </div>
     </section>
