@@ -2,7 +2,7 @@ import { Card } from '@/components/ui/card';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 px-6">
+    <section id="about" className="py-20 px-0 md:px-6">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
@@ -72,6 +72,9 @@ const About = () => {
               <div className="font-mono text-arch-primary">
                 while(coding) &#123; innovate(); &#125;
               </div>
+              {/* <div className="font-mono text-arch-primary">
+                for ye = &#123; !gods; &#125;
+              </div> */}
             </div>
           </div>
         </div>

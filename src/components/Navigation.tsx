@@ -17,13 +17,13 @@ const Navigation = () => {
   };
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-background/90 backdrop-blur-md shadow-arch' : 'bg-transparent'
+    <nav className={`fixed right-2 left-2 top-2 rounded-md w-auto z-50 transition-all duration-300 ${
+      isScrolled ? 'bg-background/70 backdrop-blur-md shadow-arch' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-xl font-bold font-mono text-arch-primary">
-            &lt;/DEV&gt;
+            {"<"}Cybergod{">"}
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
